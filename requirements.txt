@@ -1,4 +1,3 @@
-re==2024.9.11
 pytube==15.0.0
 Flask==3.0.0
 gunicorn
