@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Downloader</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h1>YouTube Video Downloader</h1>
-        <form action="/download" method="post" class="download-form">
-            <label for="youtube-link">YouTube Link:</label>
-            <input type="url" id="youtube-link" name="youtube_link" placeholder="Paste your YouTube link here" required>
-            
-            <label for="resolution">Choose Resolution:</label>
-            <select id="resolution" name="resolution" required>
-                <option value="1080">1080p</option>
-                <option value="720">720p</option>
-                <option value="360">360p</option>
-                <option value="144">144p</option>
-            </select>
-            
-            <button type="submit">Download</button>
-        </form>
+      <h1>YouTube Video Downloader</h1>
+      <form action="/download" method="post" class="download-form">
+        <label for="youtube-link">YouTube Link:</label>
+        <input
+          type="url"
+          id="youtube-link"
+          name="youtube_link"
+          placeholder="Paste your YouTube link here"
+          required
+        />
+
+        <label for="resolution">Choose Resolution:</label>
+        <select id="resolution" name="resolution" required>
+          <option value="1080">1080p</option>
+          <option value="720">720p</option>
+          <option value="360">360p</option>
+          <option value="144">144p</option>
+        </select>
+
+        <button type="submit">Download</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>
